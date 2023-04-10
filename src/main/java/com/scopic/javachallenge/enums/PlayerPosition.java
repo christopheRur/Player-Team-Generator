@@ -6,5 +6,5 @@
 package com.scopic.javachallenge.enums;	
 
 public enum PlayerPosition {	
-    DEFENDER, MIDFIELDER, FORWARD;	
+    DEFENDER, MIDFIELDER, FORWARD;
 }

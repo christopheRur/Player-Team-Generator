@@ -8,7 +8,11 @@ package com.scopic.javachallenge.repositories;
 import com.scopic.javachallenge.models.Player;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
 
-public interface PlayerRepository extends JpaRepository<Player, Long> {   
+
+public interface PlayerRepository extends JpaRepository<Player, Long> {
+    List<Player> findByPosition(String position);
+   Player findTopByPosition(String position);
 
 }

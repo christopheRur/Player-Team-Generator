@@ -36,4 +36,46 @@ public class PlayerSkill implements Serializable {
     @ManyToOne
     @JoinColumn(name = "player_id")
     private Player player;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Skill getSkill() {
+        return skill;
+    }
+
+    public void setSkill(Skill skill) {
+        this.skill = skill;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
+    @Override
+    public String toString() {
+        return "PlayerSkill{" +
+                "id=" + id +
+                ", skill=" + skill +
+                ", value=" + value +
+                ", player=" + player +
+                '}';
+    }
 }
