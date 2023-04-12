@@ -119,6 +119,7 @@ public class PlayerController {
      */
     @DeleteMapping("/player/{id}")
     public ResponseEntity<?> delete(@PathVariable final Long id, @RequestHeader("Authorization") String authToken) {
+
         try{
 
             if(!AuthTokenValidation.validateAuthToken(authToken)){
